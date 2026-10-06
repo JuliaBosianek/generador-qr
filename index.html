@@ -1,19 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR</title>
+    <title>Generador de código QR</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header>
-        <h1>Servicios y ocio</h1>
+        <h1>Generador de código QR</h1>
     </header>
     <main>
 
+        <section>
+            <h2>Datos personales</h2>
+
+            <form action="" id="formulario-qr">
+
+                <div>
+                    <label for="nombre">Nombre <span class="mandatory">*</span></label>
+                    <input type="text" name="nombre" id="nombre" required aria-required="true">
+                </div>
+
+                <div>
+                    <label for="apellidos">Apellidos <span class="mandatory">*</span></label>
+                    <input type="text" name="apellidos" id="apellidos" required aria-required="true">
+                </div>
+
+                <div>
+                    <label for="dni">DNI <span class="mandatory">*</span></label>                
+                    <input type="text" name="dni" id="dni" required aria-required="true">      
+                </div>
+
+                <button type="submit">Generar código QR</button>
+
+            </form>
+        </section>
+
+        <section id="resultado-qr" hidden>
+
+            <div id="codigo-qr"></div>
+
+            <div id="datos-accesibles" class="oculto-accesible">
+                <p id="mensaje" aria-live="polite"></p>
+
+                <h3>Información contenida en el código QR</h3>
+                <p id="texto-datos"></p>
+            </div>
+
+        </section>
     </main>
-    <footer>
-        
-    </footer>
+
+    <script type="module" src="js/script.js"></script>
 </body>
 </html>

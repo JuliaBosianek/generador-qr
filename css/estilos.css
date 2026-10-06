@@ -1,0 +1,170 @@
+/*=====================
+    ESTILOS GENERALES
+=======================*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #234b72;
+    color: #c1d3e5;
+    line-height: 1.5;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+main {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto 40px
+}
+
+/*=====================
+        SECCIONES
+=======================*/
+
+section {
+    background-color: #29547e;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*=====================
+        FORMULARIO
+=======================*/
+
+form > div {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+/*=====================
+        FOCUS
+=======================*/
+
+input:focus,
+button:focus {
+    outline: 3px solid #2d7bd4;
+    outline-offset: 2px;
+}
+
+/*=====================
+   CAMPOS OBLIGATORIOS
+=======================*/
+
+.mandatory {
+    color: #cc2846;
+}
+
+/*=====================
+          BOTÓN
+=======================*/
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7595ba;
+    color: #29547e;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4f80b8;
+    color: #235383;
+}
+
+/*=====================
+        CÓDIGO QR
+=======================*/
+
+#codigo-qr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#codigo-qr svg {
+    width: 250px;
+    height: 250px;
+    max-width: 100%;
+}
+
+/*=====================
+   CONTENIDO ACCESIBLE
+=======================*/
+
+.oculto-accesible {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/*=====================
+        RESPONSIVE
+=======================*/
+
+@media (max-width: 500px){
+
+    header {
+        padding-top: 20px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    #codigo-qr svg {
+        width: 220px;
+        height: 220px;
+    }
+
+}
+
